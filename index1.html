@@ -1,0 +1,323 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#recentButton').jqxSwitchButton({
+                height: 27,
+                width: 81,
+                checked: true
+            });
+
+            $('.jqx-switchbutton').on('checked', function () {
+                $('card-item').css('background-color', 'blue');
+            });
+
+            $('.jqx-switchbutton').on('unchecked', function () {
+                $('card-item').css('background-color', 'white');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="row no-gutters">
+        <div class="col-md-12 col-xl-12 col-sm-12 header-content">
+            <header>
+                <div class="head-content">
+                    <b><span class="text-red">Sample</span> Admin </b>&nbsp;<i class="fa fa-align-justify"></i>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-md-2 col-xl-2 col-sm-2 sidebar-wrapper">
+            <div class="sidebar">
+                <a class="active" href="#"><i class="fa fa-dashboard"></i>&nbsp; Dashboard</a>
+                <a href="#"><i class="fa fa-dashboard"></i>&nbsp; Management</a>
+                <a href="#"><i class="fa fa-folder"></i>&nbsp; Business</a>
+                <a href="#"><i class="fa fa-dashboard"></i>&nbsp; Post</a>
+            </div>
+
+        </div>
+        <div class="col-md-10 col-xl-10 col-sm-12 ">
+            <div class="row no-gutters">
+                <div class="col-md-12 col-xl-12 col-sm-12 ">
+                    <div class="content-top">
+                        <h5> Business/All/Details</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-12 col-xl-12 col-sm-12 ">
+                    <div class="content-wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 col-xl-12 col-sm-12 ">
+                                    <div class="content-wrapper1"><b>Vantage Machine</div>
+                                </div>
+                            </div>
+
+
+                            <div class="row ">
+                                <div class="col-md-12 col-xl-12 col-sm-12 ">
+
+                                    <div class="content-inner">
+                                        <div class="row content-button">
+                                            <div class="col-md-12 col-xl-12 col-sm-12 ">
+                                                <button><i class="fa fa-info-circle"></i>Basic Details</button>
+                                                <button><i class="fa fa-wifi"></i>Post</button>
+                                                <button><i class="fa fa-info-circle"></i>Location</button>
+                                                <button><i class="fa fa-calendar"></i>Happy Hours</button>
+                                                <button><i class="fa fa-calendar"></i>Events</button>
+                                                <button><i class="fa fa-info-circle"></i>Offers</button>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-12 col-xl-12 col-sm-12 ">
+                                                <div class="container-fluid">
+                                                    <button class="w3-button btn-primary "> <i class="fa fa-plus"></i>
+                                                        Add New
+                                                        Offers</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-fluid ">
+                                            <div class="row card-item card-container no-gutters ">
+                                                <div class="col-md-9 col-xl-9 col-sm-9 index1 order-2 order-lg-1">
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Day </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">Monday</div>
+                                                    </div>
+
+                                                    <div class="row  wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Offer </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">Buy one Get one
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row  wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Description
+                                                            </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "> food security
+                                                            are monitored by agencies like the International Association
+                                                            for Food Protection, World Resources Institute, World Food
+                                                            Programme, Food and Agriculture Organization, and
+                                                            International Food Information Council</div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Timing</b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "> 10:00 Am - 8:00
+                                                            Pm
+                                                        </div>
+                                                    </div>
+                                                    <div class="row  wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Active</b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">
+                                                            <label class="switch jqx-switchbutton" id="recentButton">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </label></div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-9 col-xl-9 col-sm-9 index1 index3">
+                                                            <button type="button" class="btn btn-info"><i
+                                                                    class="fa fa-edit"></i>Edit</button>
+
+
+                                                            <button type="button" class="btn btn-danger"><i
+                                                                    class="fa fa-trash"></i>Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-xl-3 col-sm-3 align-center order-1 ">
+
+                                                    <div class="gallery-image responsive">
+                                                        <img class="gallery-image-wrapper"
+                                                            src="C:\saturdaytask\assets\images\food.jpg "
+                                                            class="responsive">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="row card-item card-container no-gutters index4">
+                                                <div class="col-md-9 col-xl-9 col-sm-9 index6 order-2 order-lg-1">
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Day </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">Monday</div>
+                                                    </div>
+
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Offer </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">Buy one Get one
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Description
+                                                            </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "> food security
+                                                            are monitored by agencies like the International Association
+                                                            for Food Protection, World Resources Institute, World Food
+                                                            Programme, Food and Agriculture Organization, and
+                                                            International Food Information Council.</div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Timing</b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "> 10:00 Am - 8:00
+                                                            Pm
+                                                        </div>
+                                                    </div>
+                                                    <div class="row wrapper ">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Active</b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "><label
+                                                                class="switch button">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </label></div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-9 col-xl-9 col-sm-9 index1 index3">
+                                                            <button type="button" class="btn btn-info"><i
+                                                                    class="fa fa-edit"></i>Edit</button>
+
+
+                                                            <button type="button" class="btn btn-danger"><i
+                                                                    class="fa fa-trash"></i>Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-xl-3 col-sm-2 align-center order-1">
+                                                    <div class="gallery-image">
+                                                        <div class="gallery-image">
+                                                            <img class="gallery-image-wrapper"
+                                                                src="C:\saturdaytask\assets\images\food.jpg "
+                                                                class="responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row card-item card-container no-gutters">
+                                                <div class="col-md-9 col-xl-9 col-sm-9 order-2 order-lg-1 index">
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Day </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">Monday</div>
+                                                    </div>
+
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Offer </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 ">Buy one Get one
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Description
+                                                            </b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "> food security
+                                                            are monitored by agencies like the International Association
+                                                            for Food Protection, World Resources Institute, World Food
+                                                            Programme, Food and Agriculture Organization, and
+                                                            International Food Information Council</div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Timing</b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "> 10:00 Am - 8:00
+                                                            Pm
+                                                        </div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-3 col-xl-3 col-sm-3 index1"><b> Active</b>
+                                                        </div>
+                                                        <div class="col-md-6 col-xl-6 col-sm-6 index2 "><label
+                                                                class="switch">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </label></div>
+                                                    </div>
+                                                    <div class="row wrapper">
+                                                        <div class="col-md-9 col-xl-9 col-sm-9 index3">
+                                                            <button type="button" class="btn btn-info "><i
+                                                                    class="fa fa-edit"></i>Edit</button>
+
+
+                                                            <button type="button" class="btn btn-danger"><i
+                                                                    class="fa fa-trash"></i>Delete</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3 col-xl-3 col-sm-3 order-1 align-center ">
+                                                    <div class="gallery-image">
+                                                        <div class="gallery-image">
+                                                            <img class="gallery-image-wrapper"
+                                                                src="C:\saturdaytask\assets\images\food.jpg "
+                                                                class="responsive" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-md-12 col-xl-12 col-sm-12 ">
+
+            <footer>
+                <div class="footer-text">
+                    <h4>Yummic Production</h4>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

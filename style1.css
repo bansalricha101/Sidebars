@@ -1,0 +1,263 @@
+header {
+
+    background-image: linear-gradient(#BEBEBE, #E8E8E8);
+    color: #909090;
+
+    height: 7%;
+    margin-top: 0% !important;
+    border-bottom: #909090;
+}
+
+.header-content {
+    padding: 0% !important;
+}
+
+.text-red {
+    color: red;
+}
+
+.head-content {
+    padding: 5px;
+    margin-left: 9px;
+    border-bottom: #909090;
+}
+
+.fa {
+    margin-right: 3px;
+}
+
+/****************************************************/
+.sidebar {
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    height: 100%;
+
+}
+
+.sidebar-wrapper {
+    background-color: #303030;
+
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: red;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/******************************************/
+.content-top {
+    background-color: white;
+    color: #555;
+    padding: 5px;
+}
+
+.content-wrapper {
+    background-color: #D0D0D0;
+
+}
+
+.content-wrapper1 {
+
+    border: 1px solid #C8C8C8;
+    padding: 5px;
+    background-color: #E8E8E8;
+    border-radius: 2px;
+
+}
+
+.content-item {
+    background-color: white;
+}
+
+.item1 {
+    border: 2px solid #A8A8A8;
+
+    margin-top: 35px;
+    margin-left: 10px;
+    border-radius: 6px;
+    width: 303px;
+    margin-right: 0% !important;
+    margin-bottom: 10px;
+
+}
+
+.content-inner {
+    background-color: white;
+    /* margin: 10px; */
+}
+
+.content-button {
+    padding: 10px;
+    display: flex;
+
+
+}
+
+.btn-primary {
+
+    position: relative;
+    float: right;
+}
+
+.index5 {
+    margin-left: 20px;
+}
+
+.index3 {
+    margin-left: 20px;
+}
+
+.gallery-image-wrapper {
+    width: 100% !important;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 5px !important;
+}
+
+.card-item {
+    background-color: #FFE9EC !important;
+    display: flex !important;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px pink !important;
+    border-top: 1px pink !important;
+    margin-bottom: 20px !important;
+}
+
+.card-item2 {
+    background-color: white !important;
+    display: flex !important;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px pink !important;
+    border-top: 1px pink !important;
+    margin-bottom: 20px !important;
+}
+
+.items {
+    display: flex;
+    /* direction: row;
+    flex-grow: 1; */
+}
+
+.card-container {
+    border-bottom: 1px solid pink !important;
+    border-top: 1px solid pink !important;
+
+}
+
+.content-inner {
+    padding: 10px;
+}
+
+.index2 {
+    font-weight: normal;
+}
+
+.index4 {
+    background-color: #E0E0E0 !important;
+}
+
+.index6 {
+    padding: 8px;
+}
+
+.align-center {
+    position: relative;
+    float: right;
+
+}
+
+.btn-loc {
+    margin-left: 20px;
+}
+
+/************************************/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: red;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px red;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.footer-text {
+    background-color: #D8D8D8;
+    /* color: #82DEF9; */
+    color: #303030;
+    padding: 5px;
+}
+
+
+@media screen and (max-width:300) {
+    .gallery-image {
+        float: left;
+    }
+}
