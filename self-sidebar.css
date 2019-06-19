@@ -21,7 +21,9 @@ body {
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    max-width: 90px;
+    min-width: 94px;
+    align-items: center;
 }
 
 p {
@@ -68,7 +70,7 @@ a[data-toggle="collapse"] {
 
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 3px;
     display: block;
     transform: translateY(-50%);
 }
@@ -110,4 +112,9 @@ ul ul a {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    font-size: 0.85em;
 }
