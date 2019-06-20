@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>TO-DO-List</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div class="container content">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-12 intro">
+
+                <h1 class="htext">To-Do Works</h1>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-12 sub-text1">
+                <h4>Enter Text into input field to add into TO-Do List</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-12 sub-text2">
+                <h4> Click on a button to add into list</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-12 sub-text3">
+                <h4> Click ox "x" to remove item</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-12 ">
+                <input id="userinput" type="text" placeholder="Enter text">
+                <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-12 ">
+                <div class="itemlist">
+                    <ul class="offset col-sm-12"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var enterbutton = document.getElementById("enter");
+        var input = document.getElementById("userinput");
+        var ul = document.querySelector("ul");
+        var item = document.getElementsByTagName("li");
+
+        function inputLenght() {
+            return input.value.lenght;
+        }
+
+        function listLenght() {
+            return item.lenght;
+        }
+
+        function createListElement {
+            var li = document.createElement(li);
+            li.appendChild(document.createTextNode(input.value));
+            ul.appendChild(li);
+            input.value("");
+        }
+
+        function crossOut() {
+            li.classList.toggle("done");
+        }
+        li.addEventListner("click", crossOut);
+        var dbtn = document.createElement("button");
+        dbtn.appendChild(document.createTextNode("X"));
+        li.appendChild("dbtn");
+        dbtn.addEventListener("click", deleteListItem);
+
+        function deleteListItem() {
+            li.classList.add("delete");
+
+        }
+
+        function addListAfterClick() {
+            if (inputLenght() > 0) {
+                createListElement();
+
+            }
+        }
+        enterbutton.addEventListener("click", addListAfterClick);
+        input.addEventListener("click", addListAfterKeypress);
+    </script>
+</body>
+
+</html>
