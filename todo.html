@@ -48,62 +48,75 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xl-12 ">
-                <input id="userinput" type="text" placeholder="Enter text">
-                <button id="enter"><i class="fas fa-pencil-alt"></i></button>
+                <input id="userInput" type="text" placeholder="Enter text">
+                <button class="btn-place" id="enter"><i class="fas fa-pencil-alt"></i></button>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-xl-12 ">
-                <div class="itemlist">
-                    <ul class="offset col-sm-12"></ul>
+                <div class="itemlists">
+                    <ul class="offset-sm-2 col-sm-12"></ul>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <script type="text/javascript" src="todo.js"> -->
     <script>
-        var enterbutton = document.getElementById("enter");
-        var input = document.getElementById("userinput");
+        var enterButton = document.getElementById("enter");
+        var input = document.getElementById("userInput");
         var ul = document.querySelector("ul");
-        var item = document.getElementsByTagName("li");
+        var item = document.querySelector("li");
 
-        function inputLenght() {
-            return input.value.lenght;
+        function inputLength() {
+            return input.value.length;
         }
 
-        function listLenght() {
-            return item.lenght;
+        function listLength() {
+            return item.length;
         }
 
-        function createListElement {
-            var li = document.createElement(li);
+        function createListElement() {
+            var li = document.createElement("li");
             li.appendChild(document.createTextNode(input.value));
             ul.appendChild(li);
-            input.value("");
-        }
+            input.value = "";
 
-        function crossOut() {
-            li.classList.toggle("done");
-        }
-        li.addEventListner("click", crossOut);
-        var dbtn = document.createElement("button");
-        dbtn.appendChild(document.createTextNode("X"));
-        li.appendChild("dbtn");
-        dbtn.addEventListener("click", deleteListItem);
 
-        function deleteListItem() {
-            li.classList.add("delete");
+            function crossOut() {
+                li.classList.toggle("done");
+            }
+
+            li.addEventListener("click", crossOut);
+
+            var dBtn = document.createElement("button");
+            dBtn.appendChild(document.createTextNode("X"));
+            li.appendChild(dBtn);
+            dBtn.addEventListener("click", deleteListItem);
+
+            function deleteListItem() {
+                li.classList.add("delete")
+            }
 
         }
 
         function addListAfterClick() {
-            if (inputLenght() > 0) {
+            if (inputLength() > 0) {
                 createListElement();
-
             }
         }
-        enterbutton.addEventListener("click", addListAfterClick);
-        input.addEventListener("click", addListAfterKeypress);
+
+        function addListAfterKeypress(event) {
+            if (inputLength() > 0 && event.which === 13) {
+                createListElement();
+            }
+        }
+
+
+        enterButton.addEventListener("click", addListAfterClick);
+
+        input.addEventListener("keypress", addListAfterKeypress);
     </script>
+
 </body>
 
 </html>

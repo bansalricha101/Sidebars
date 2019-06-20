@@ -40,7 +40,7 @@ body {
     margin-bottom: 10px;
 }
 
-#userinput {
+#userInput {
     border-radius: 5px;
     min-width: 50%;
     padding: 10px;
@@ -51,12 +51,19 @@ body {
     padding: 12px 15px;
     transition: all 0.75s ease;
     border-radius: 5px;
-    color: #04A1BF
+    color: #04A1BF;
 }
 
 #enter:hover {
     color: #02798F;
 
+}
+
+li>button {
+    float: right;
+    font-weight: 800;
+    background: none;
+    border: none;
 }
 
 ul {
@@ -67,10 +74,15 @@ ul {
 
 li {
     text-transform: capitalize;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-bottom: 10px;
+    margin-top: 10px;
     border: 2px solid #025f70;
-    border-radius: 3px;
+    border-radius: 5px;
+    background: #4EB9CD;
+    list-style: none;
+    width: 50%;
+    padding: 5px;
 }
 
 li:hover {
@@ -87,8 +99,9 @@ input {
 .delete {
     display: none;
 
+
 }
 
 .done {
-    background-color: #51DF70 !important;
+    background-color: white !important;
 }
